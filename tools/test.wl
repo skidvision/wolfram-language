@@ -12,11 +12,10 @@ Module[{x = x0},
     expr
 ]
     
-(* this should be a comment *)
+(* this should be a (* comment *) *)
 
 jobs[[44]]
 
-'why'
 "no string highlighting"
 
 Pi - that should be a symbol

@@ -7,13 +7,16 @@
 		},
 		{
 			"include": "#strings"
+		},
+		{
+			"include": "#comments"
 		}
 	],
 	"repository": {
 		"keywords": {
 			"patterns": [{
-				"name": "keyword.control.wolfram",
-				"match": "\\b(if|while|for|return)\\b"
+				"name": "keyword.wolfram",
+				"match": "(\\b|(?<=_))(Sin|Cos|Tan|Module)\\b"
 			}]
 		},
 		"strings": {
@@ -24,6 +27,16 @@
 				{
 					"name": "constant.character.escape.wolfram",
 					"match": "\\\\."
+				}
+			]
+		},
+		"comments": {
+			"name": "comment.block.wolfram",
+			"begin": "\\(\\*",
+			"end": "\\*\\)",
+			"patterns": [
+				{
+					"include": "#comments"
 				}
 			]
 		}

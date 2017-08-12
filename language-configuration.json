@@ -1,6 +1,3 @@
-// Mathematica / Wolfram Language configuration
-// fp
-// summer 17
 {
     "comments": {
         "blockComment": [ "(*", "*)" ]
