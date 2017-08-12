@@ -1,0 +1,43 @@
+// Mathematica / Wolfram Language configuration
+// fp
+// summer 17
+{
+    "name": "wolfram-language",
+    "displayName": "Wolfram Language",
+    "description": "Support for Mathematica / Wolfram Language syntax.",
+    "icon": "icon.png",
+    "version": "0.0.1",
+    "publisher": "flipphillips",
+    "license": "MIT",
+    "homepage": "https://github.com/skidvision/wolfram-language",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/skidvision/wolfram-language.git"
+    },
+    "bugs": {
+        "url": "https://github.com/skidvision/wolfram-language/issues"
+    },
+    "engines": {
+        "vscode": "^1.14.0"
+    },
+    "categories": [
+        "Languages"
+    ],
+    "keywords": [
+        "mathematica",
+        "wolframscript"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "wolfram",
+            "aliases": ["Wolfram Language", "wolfram", "Mathematica", "mathematica", "wolframscript"],
+            "extensions": [".m",".nb",".wl",".wls"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "wolfram",
+            "scopeName": "source.wolfram",
+            "path": "./syntaxes/wolfram.tmLanguage.json"
+        }]
+    }
+}
