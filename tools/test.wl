@@ -11,7 +11,9 @@ Sin[bob[Pi/3]]
 Module[{x = x0},
     expr
 ]
-    
+
+A gloal $ImagingDevice
+
 (* this should be a (* comment *) *)
 
 jobs[[44]]

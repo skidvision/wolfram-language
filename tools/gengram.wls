@@ -26,11 +26,11 @@ dir = FileNameJoin[{parentDir,StringJoin[ToString[$VersionNumber],".",ToString[$
 Quiet[CreateDirectory[dir]];
 
 
-(* ::Code::Initialization:: *)
-(*Export[FileNameJoin[{dir,"consts.dat"}],{consts},"TextDelimiters" -> "","FieldSeparators"->"|"];*)
-(*Export[FileNameJoin[{dir,"globals.dat"}],{globals},"TextDelimiters" -> "","FieldSeparators"->"|"];*)
-(*Export[FileNameJoin[{dir,"numeric.dat"}],{nfunc},"TextDelimiters" -> "","FieldSeparators"->"|"];*)
-(*Export[FileNameJoin[{dir,"rest.dat"}],{rest},"TextDelimiters" -> "","FieldSeparators"->"|"];*)
+Export[FileNameJoin[{dir,"consts.dat"}],{consts},"TextDelimiters" -> "","FieldSeparators"->"|"];
+Export[FileNameJoin[{dir,"globals.dat"}],{globals},"TextDelimiters" -> "","FieldSeparators"->"|"];
+Export[FileNameJoin[{dir,"numeric.dat"}],{nfunc},"TextDelimiters" -> "","FieldSeparators"->"|"];
+Export[FileNameJoin[{dir,"rest.dat"}],{rest},"TextDelimiters" -> "","FieldSeparators"->"|"];
+Export[FileNameJoin[{dir,"all.dat"}],{Join[consts,globals,nfunc,rest]},"TextDelimiters" -> "","FieldSeparators"->"|"];
 
 
 Export[FileNameJoin[{dir,"constants.json"}],consts];

@@ -1,0 +1,121 @@
+[
+  {
+    "comment": "",
+    "fileTypes": [
+      "lisp",
+      "cl",
+      "l",
+      "mud",
+      "el"
+    ],
+    "foldingStartMarker": "\\(",
+    "foldingStopMarker": "\\)",
+    "keyEquivalent": "^~L",
+    "name": "Lisp",
+    "patterns": [
+      {
+        "captures": {
+          "1": {
+            "name": "punctuation.definition.comment.lisp"
+          }
+        },
+        "match": "(;).*$\\n?",
+        "name": "comment.line.semicolon.lisp"
+      },
+      {
+        "captures": {
+          "1": {
+            "name": "storage.type.function-type.lisp"
+          },
+          "2": {
+            "name": "entity.name.function.lisp"
+          }
+        },
+        "match": "(?:\\()((?i:defgeneric|define-compiler-macro|define-method-combination|define-modify-macro|define-setf-expander|defmacro|defmethod|defsetf|defun||define-\\S+))\\s+((?:\\w|[+\\-<>/*&=.?!$%:@\\[\\]^{}~#|])+)",
+        "name": "meta.function.lisp"
+      },
+      {
+        "captures": {
+          "1": {
+            "name": "storage.type.function-type.lisp"
+          },
+          "2": {
+            "name": "entity.name.type.lisp"
+          }
+        },
+        "match": "(?:\\()((?i:deftype|defstruct|define-condition|defpackage|defclass))\\s+((?:\\w|[+\\-<>/*&=.?!$%:@\\[\\]^{}~#|])+)"
+      },
+      {
+        "captures": {
+          "1": {
+            "name": "storage.type.function-type.lisp"
+          },
+          "2": {
+            "name": "entity.name.variable.lisp"
+          }
+        },
+        "match": "(?:\\()((?i:defvar|defconstant|defparameter|define-symbol-macro))\\s+((?:\\w|[+\\-<>/*&=.?!$%:@\\[\\]^{}~#|])+)"
+      },
+      {
+        "captures": {
+          "1": {
+            "name": "punctuation.definition.constant.lisp"
+          }
+        },
+        "match": "(#)(\\w|[\\\\+-=<>'\"&#])+",
+        "name": "constant.character.lisp"
+      },
+      {
+        "captures": {
+          "1": {
+            "name": "punctuation.definition.variable.lisp"
+          },
+          "3": {
+            "name": "punctuation.definition.variable.lisp"
+          }
+        },
+        "match": "(?<=^|\\s|[()])(\\*)(\\S*)(\\*)(?=$|\\s|[()])",
+        "name": "variable.other.global.lisp"
+      },
+      {
+        "match": "(?<=^|\\s|[()]):(\\w|[+\\-<>/*&=.?!$%:@\\[\\]^{}~#|])*",
+        "name": "keyword.constant.lisp"
+      },
+      {
+        "match": "(?<=\\()(?i:block|case|ccase|ecase|typecase|etypecase|ctypecase|catch|cond|destructuring-bind|do|do*|dolist|dotimes|eval-when|flet|labels|macrolet|generic-flet|generic-labels|handler-case|restart-case|if|lambda|let|let*|handler-bind|restart-bind|locally|multiple-value-bind|multiple-value-call|multiple-value-prog1|prog|prog*|prog1|prog2|progn|progv|return|return-from|symbol-macrolet|tagbody|throw|unless|unwind-protect|when|with-accessors|with-condition-restarts|with-open-file|with-output-to-string|with-slots|with-standard-io-syntax|loop|declare|declaim|proclaim|setq|setf|quote|with-\\S+)(?=\\s+)",
+        "name": "keyword.control.lisp"
+      },
+      {
+        "match": "(?<=^|\\s|[()])(?i:nil|t)(?=$|\\s|[()])",
+        "name": "constant.language.lisp"
+      },
+      {
+        "match": "\\b((0(x|X)[0-9a-fA-F]*)|(([0-9]+\\.?[0-9]*)|(\\.[0-9]+))((e|E)(\\+|-)?[0-9]+)?)(L|l|UL|ul|u|U|F|f|ll|LL|ull|ULL)?\\b",
+        "name": "constant.numeric.lisp"
+      },
+      {
+        "begin": "\"",
+        "beginCaptures": {
+          "0": {
+            "name": "punctuation.definition.string.begin.lisp"
+          }
+        },
+        "end": "\"",
+        "endCaptures": {
+          "0": {
+            "name": "punctuation.definition.string.end.lisp"
+          }
+        },
+        "name": "string.quoted.double.lisp",
+        "patterns": [
+          {
+            "match": "\\\\.",
+            "name": "constant.character.escape.lisp"
+          }
+        ]
+      }
+    ],
+    "scopeName": "source.lisp",
+    "uuid": "00D451C9-6B1D-11D9-8DFA-000D93589AF6"
+  }
+]
