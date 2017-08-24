@@ -1,0 +1,16 @@
+*
+*/**
+**/.DS_Store
+
+!package.json
+
+!icon.png
+
+!README.md
+!CHANGELOG.md
+!LICENSE
+!ISSUE_TEMPLATE.md
+
+!images/*
+!wolfram-configuration.json
+!syntaxes/wolfram.json

@@ -1,6 +1,6 @@
 # Change Log
 
-![](icon.png)
+<!-- ![](icon.png) -->
 
 <!-- 
 ## Guiding Principles
@@ -23,9 +23,14 @@
 - `Security` in case of vulnerabilities. 
 -->
 
-## [Unreleased]
+## [0.1.1]
+
+### Added
 - ReWrite using yo code
 - Added json from the lisp package since it is more functional-like for this project.
+
+### Changed
+- some packaging for vsce 
 
 ## [0.0.1] - 2017-08-01
 - Initial version

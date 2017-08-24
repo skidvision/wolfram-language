@@ -3,7 +3,7 @@
     "displayName": "Wolfram Language",
     "description": "Support for Mathematica / Wolfram Language syntax.",
     "icon": "icon.png",
-    "version": "0.0.1",
+    "version": "0.1.0",
     "publisher": "flipphillips",
     "author": {
         "name": "Flip Phillips"
