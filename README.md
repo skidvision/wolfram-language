@@ -9,6 +9,7 @@ Wolfram Language (nee _Mathematica_) support for Microsoft Visual Studio Code.
 It presently includes symbol definitions from version 11.2 of _Mathematica_ as well as other simple syntactic support.
 
 ## Features
+
 <!-- 
 ![feature X](images/feature-x.png)
 
@@ -36,5 +37,3 @@ This extension contributes the following settings:
 ## Release Notes
 
 For lots of detail, see the [](CHANGELOG.md) file distributed with this extension.
-
-

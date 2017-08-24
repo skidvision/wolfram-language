@@ -2,6 +2,8 @@
 */**
 **/.DS_Store
 
+tools/*
+
 !package.json
 
 !icon.png
