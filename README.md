@@ -36,4 +36,4 @@ This extension contributes the following settings:
 
 ## Release Notes
 
-For lots of detail, see the [](CHANGELOG.md) file distributed with this extension.
+See the [CHANGELOG.md](CHANGELOG.md) file distributed with this extension.

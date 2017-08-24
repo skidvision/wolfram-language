@@ -23,6 +23,12 @@
 - `Security` in case of vulnerabilities. 
 -->
 
+## [Development version]
+
+### Changed
+- links in `README`
+- `ISSUE_TEMPLATE` tweaks
+
 ## [0.1.1]
 
 ### Added
