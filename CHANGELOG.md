@@ -23,6 +23,9 @@
 - `Security` in case of vulnerabilities. 
 -->
 
+## Todo
+- fix automatic version bumper
+
 ## [Development version]
 
 ### Changed
