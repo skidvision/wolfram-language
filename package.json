@@ -2,6 +2,10 @@
     "name": "wolfram-language",
     "displayName": "Wolfram Language",
     "description": "Support for Mathematica / Wolfram Language syntax.",
+    "galleryBanner": {
+        "color": "#C80000",
+        "theme": "dark"
+    },
     "icon": "icon.png",
     "version": "0.1.0",
     "publisher": "flipphillips",
@@ -16,10 +20,11 @@
     },
     "readme": "README.md",
     "bugs": {
-        "url": "https://github.com/skidvision/wolfram-language/issues"
+        "url": "https://github.com/skidvision/wolfram-language/issues",
+        "email": "flip@skidmore.edu"
     },
     "engines": {
-        "vscode": "^1.14.0"
+        "vscode": "^1.0.0"
     },
     "categories": [
         "Languages"

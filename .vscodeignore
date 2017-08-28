@@ -2,7 +2,7 @@
 */**
 **/.DS_Store
 
-tools/*
+tools/**
 
 !package.json
 
@@ -13,6 +13,6 @@ tools/*
 !LICENSE
 !ISSUE_TEMPLATE.md
 
-!images/*
+!images/**
 !wolfram-configuration.json
 !syntaxes/wolfram.json

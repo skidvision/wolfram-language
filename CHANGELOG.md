@@ -28,9 +28,13 @@
 
 ## [Development version]
 
+### Added
+- updated the `package.json` to include a few more marketplace / bugreporting features.
+
 ### Changed
 - links in `README`
 - `ISSUE_TEMPLATE` tweaks
+- modified the `.vscodeignore` to properly ignore stuff in the tools, I think
 
 ## [0.1.1]
 
