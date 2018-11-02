@@ -22,7 +22,7 @@
         "vscode": "^1.14.0"
     },
     "categories": [
-        "Languages"
+        "Programming Languages"
     ],
     "keywords": [
         "mathematica",
@@ -32,6 +32,7 @@
         "languages": [{
             "id": "wolfram",
             "aliases": ["Wolfram Language", "wolfram", "Mathematica", "mathematica", "wolframscript"],
+            "firstLine": "^#!\\s*/.*(?:wolframscript)\\b",
             "extensions": [".m",".nb",".wl",".wls"],
             "configuration": "./wolfram-configuration.json"
         }],
